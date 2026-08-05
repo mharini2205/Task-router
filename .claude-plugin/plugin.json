@@ -1,0 +1,19 @@
+{
+  "name": "task-router",
+  "version": "1.0.0",
+  "description": "A personal task router and navigator. For any task you describe, it recommends which AI tool (Claude, ChatGPT, Gemini, Perplexity) and which Claude model (Opus, Sonnet, Haiku) to use — optimizing for quality, speed, and token/cost. Claude-first, tuned to Harini's research + writing + simulation workflow.",
+  "author": {
+    "name": "Harini",
+    "email": "harini@backyardcreators.com"
+  },
+  "keywords": [
+    "router",
+    "model-selection",
+    "opus",
+    "sonnet",
+    "haiku",
+    "decision-support",
+    "productivity"
+  ],
+  "license": "MIT"
+}

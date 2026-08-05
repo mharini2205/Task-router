@@ -1,0 +1,18 @@
+{
+  "name": "harini-task-router",
+  "owner": {
+    "name": "Harini",
+    "email": "harini@backyardcreators.com"
+  },
+  "metadata": {
+    "description": "Harini's personal plugins — task routing and navigation.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "task-router",
+      "source": ".",
+      "description": "Recommends which AI tool + Claude model (Opus/Sonnet/Haiku) to use for each task. Claude-first task router and navigator."
+    }
+  ]
+}
