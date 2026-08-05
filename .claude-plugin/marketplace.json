@@ -1,18 +1,34 @@
 {
   "name": "harini-task-router",
+  "description": "Harini's personal task routing and navigation plugins.",
   "owner": {
     "name": "Harini",
-    "email": "harini@backyardcreators.com"
-  },
-  "metadata": {
-    "description": "Harini's personal plugins — task routing and navigation.",
-    "version": "1.0.0"
+    "email": "mharini2205@gmail.com",
+    "url": "https://github.com/mharini2205"
   },
   "plugins": [
     {
       "name": "task-router",
-      "source": ".",
-      "description": "Recommends which AI tool + Claude model (Opus/Sonnet/Haiku) to use for each task. Claude-first task router and navigator."
+      "displayName": "Task Router",
+      "source": "./plugins/task-router",
+      "description": "Recommends which AI tool (Claude, ChatGPT, Gemini, Perplexity) and which Claude model (Opus, Sonnet, Haiku) to use for each task, optimizing quality vs speed vs token cost. Claude-first task router and navigator.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Harini",
+        "email": "harini@backyardcreators.com"
+      },
+      "homepage": "https://github.com/mharini2205/Task-router",
+      "repository": "https://github.com/mharini2205/Task-router",
+      "category": "productivity",
+      "tags": [
+        "router",
+        "model-selection",
+        "opus",
+        "sonnet",
+        "haiku",
+        "decision-support",
+        "productivity"
+      ]
     }
   ]
 }

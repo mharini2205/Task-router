@@ -81,9 +81,9 @@ Four checks, first one wins:
 Then modifiers (huge context → Gemini; images/layout → design tool; long session → downshift to Sonnet; about to submit → one Opus polish pass).
 
 Full detail lives in the skill's references:
-- [`model-guide.md`](skills/task-router/references/model-guide.md) — Opus vs Sonnet vs Haiku + token intuition
-- [`tool-guide.md`](skills/task-router/references/tool-guide.md) — Claude vs ChatGPT vs Gemini vs Perplexity + the "when to leave Claude" tests
-- [`routing-matrix.md`](skills/task-router/references/routing-matrix.md) — the full task→route table
+- [`model-guide.md`](plugins/task-router/skills/task-router/references/model-guide.md) — Opus vs Sonnet vs Haiku + token intuition
+- [`tool-guide.md`](plugins/task-router/skills/task-router/references/tool-guide.md) — Claude vs ChatGPT vs Gemini vs Perplexity + the "when to leave Claude" tests
+- [`routing-matrix.md`](plugins/task-router/skills/task-router/references/routing-matrix.md) — the full task→route table
 
 ---
 
@@ -92,16 +92,19 @@ Full detail lives in the skill's references:
 ```
 Task-router/
 ├── .claude-plugin/
-│   ├── plugin.json          # plugin manifest
-│   └── marketplace.json     # makes the repo one-command installable
-├── skills/
+│   └── marketplace.json         # marketplace manifest (add this repo, install task-router)
+├── plugins/
 │   └── task-router/
-│       ├── SKILL.md         # the decision engine (auto-triggers)
-│       └── references/      # model guide, tool guide, full matrix
-├── commands/
-│   └── route.md             # the /route slash command
-├── agents/
-│   └── router.md            # the routing subagent
+│       ├── .claude-plugin/
+│       │   └── plugin.json      # plugin manifest
+│       ├── skills/
+│       │   └── task-router/
+│       │       ├── SKILL.md     # the decision engine (auto-triggers)
+│       │       └── references/  # model guide, tool guide, full matrix
+│       ├── commands/
+│       │   └── route.md         # the /route slash command
+│       └── agents/
+│           └── router.md        # the routing subagent
 ├── README.md
 └── LICENSE
 ```
@@ -112,8 +115,8 @@ Task-router/
 
 The routing rules are just markdown — edit them as your habits change:
 
-- **Add a task type:** drop a row into [`routing-matrix.md`](skills/task-router/references/routing-matrix.md).
-- **Got a new paid tool?** update the stack note at the top of [`tool-guide.md`](skills/task-router/references/tool-guide.md) so it starts recommending it.
+- **Add a task type:** drop a row into [`routing-matrix.md`](plugins/task-router/skills/task-router/references/routing-matrix.md).
+- **Got a new paid tool?** update the stack note at the top of [`tool-guide.md`](plugins/task-router/skills/task-router/references/tool-guide.md) so it starts recommending it.
 - **Disagree with a call?** change the tier in the table — the skill reads these files live.
 
 ---
